@@ -8,7 +8,7 @@ if [[ $GIT_BRANCH == "dev" ]]; then
      docker tag ranjith ranjith7777/dev:latest
      docker login -u ranjith7777 --password dckr_pat_IBO-I29lL9Bt-Q5OxmdoXxIwwk0
      docker push ranjith7777/dev:latest
-elif [[ $GIT_BRANCH == "dev" ]]; then
+elif [[ $GIT_BRANCH == "orgin/master" ]]; then
     # Build your project
     sh'chmod +x build.sh'
     sh'./build.sh' 
