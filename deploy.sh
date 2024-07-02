@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[ $GIT_BRANCH == "origin/dev" ]]; then
+if [[ $GIT_BRANCH == "dev" ]]; then
     # Build your project
     sh 'chmod +x build.sh'
     sh './build.sh'
