@@ -1,6 +1,5 @@
 #!/bin/bash
-GIT_BRANCH = git rev-parse --abbrev-ref HEAD
-
+GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 echo "$GIT_BRANCH"
 if [[ $GIT_BRANCH == "dev" ]]; then
     # Build your project
